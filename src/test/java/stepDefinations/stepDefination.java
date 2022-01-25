@@ -34,8 +34,8 @@ public class stepDefination extends TestBaseClass {
 
 	 @When("^User enters (.+) and (.+)$")
 	public void user_enters_and(String string1, String string2) {
-		driver.findElement(By.id("txtUsername")).sendKeys(string1);
-		driver.findElement(By.id("txtPassword")).sendKeys(string2);
+		driver.findElement(By.id("username")).sendKeys(string1);
+		driver.findElement(By.id("password")).sendKeys(string2);
 	}
 	
 	@And("Click on login button")
