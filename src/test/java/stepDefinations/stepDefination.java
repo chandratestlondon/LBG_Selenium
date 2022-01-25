@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.LBG.base.TestBaseClass;
+import com.LBG.pages.LoginPage;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -18,13 +19,15 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 public class stepDefination extends TestBaseClass {
+	
+	public LoginPage LP;
 		
 	public stepDefination()
 	{
 		super();	 
 		Initilization();
-	
-	}
+		LP = new LoginPage();
+			}
 
 	@Given("User landing on login page")
 	public void user_landing_on_login_page() {
@@ -34,13 +37,12 @@ public class stepDefination extends TestBaseClass {
 
 	 @When("^User enters (.+) and (.+)$")
 	public void user_enters_and(String string1, String string2) {
-		driver.findElement(By.id("username")).sendKeys(string1);
-		driver.findElement(By.id("password")).sendKeys(string2);
+		LP.login(string1, string2);
 	}
 	
 	@And("Click on login button")
 	public void click_on_login_button() {
-		driver.findElement(By.id("btnLogin")).click();
+		LP.clickLogin();
 	}
 
 	@Then("home page is displayed")

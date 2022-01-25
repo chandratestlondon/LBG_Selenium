@@ -33,10 +33,14 @@ public class LoginPage extends TestBaseClass{
 	{
 		username.sendKeys(un);
 		password.sendKeys(pwd);
-		loginbutton.click();
 		//return new DashBoardPage();
 	}
 	
-	
+	public void clickLogin()
+	{
+		
+		loginbutton.click();
+		//return new DashBoardPage();
+	}
 }
 
