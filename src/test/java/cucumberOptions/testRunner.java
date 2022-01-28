@@ -9,8 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		
 		features= "src/test/java/features",
-		glue= "stepDefinations", tags="@SmokeTest"
-		//plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json" }
+		glue= "stepDefinations", 
+		tags="@SmokeTest",
+		//format= {"pretty","html:test-output_1","json:target/cucumber-reports/CucumberTestReport.json"},
+		plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
+		monochrome= true,
+		dryRun= false
 		)
 	
 public class testRunner {
