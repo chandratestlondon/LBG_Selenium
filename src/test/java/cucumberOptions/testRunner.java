@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue= "stepDefinations", 
 		tags="@SmokeTest",
 		//format= {"pretty","html:test-output_1","json:target/cucumber-reports/CucumberTestReport.json"},
-		plugin = ("json:target/cucumber-reports/CucumberTestReport.json"),
+		plugin = "json:target/cucumber-reports/CucumberTestReport.json",
 		monochrome= true,
 		dryRun= false
 		
