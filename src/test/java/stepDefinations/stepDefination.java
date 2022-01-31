@@ -46,7 +46,6 @@ public class stepDefination extends TestBaseClass {
 		System.out.println(ele);
 		System.out.println("CI/CD1");
 		driver.close();
-
 		}
 	
 	@And("Dashboard is displayed")
