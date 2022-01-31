@@ -11,12 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		features= "src/test/java/features",
 
 		glue= "stepDefinations", 
-		tags="@SmokeTest",
-		//format= {"pretty","html:test-output_1","json:target/cucumber-reports/CucumberTestReport.json"},
-		plugin = { "pretty", "json:target/cucumber.json" },
-		monochrome= true,
-		dryRun= false
-		
+		tags="@SmokeTest"
+	
 )
 	
 public class testRunner {
