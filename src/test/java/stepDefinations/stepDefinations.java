@@ -12,11 +12,11 @@ import io.cucumber.java.en.When;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-public class stepDefination extends TestBaseClass {
+public class stepDefinations extends TestBaseClass {
 	
 	public LoginPage LP;
 		
-	public stepDefination()
+	public stepDefinations()
 	{
 		super();	 
 		Initilization();
