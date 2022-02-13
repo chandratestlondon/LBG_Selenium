@@ -9,6 +9,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features= "src/test/java/features",
 		glue= "stepDefinations", 
 		tags="@SmokeTest")	
-public class testRunner {
+public class runTest {
 
 }
