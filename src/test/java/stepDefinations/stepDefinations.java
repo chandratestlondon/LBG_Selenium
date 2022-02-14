@@ -26,7 +26,7 @@ public class stepDefinations extends TestBaseClass {
 	@Given("User landing on login page")
 	public void user_landing_on_login_page() {
 	     driver.get("https://opensource-demo.orangehrmlive.com/");
-	     System.out.println("New branch");
+	     System.out.println("New branch pull request");
 	   
 	}
 
