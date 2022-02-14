@@ -18,25 +18,7 @@
 #Sample Feature Definition Template
 
 Feature: Application login
-  
-  Scenario: home page default login
-  Given User landing on login page
-  When User enters "admin" and "admin123"
-  And Click on login button
-  Then home page is displayed
-  
-@SmokeTest
- Scenario Outline: home page default login
-  Given User landing on login page
-  When User enters <Username> and <Password>
-  And Click on login button
-  Then home page is displayed
-  Examples:
-  |Username|Password	|
-  |admin   |admin123  |
-  
-
-  
+      
   @SmokeTest
  Scenario Outline: home page default login4
   Given User landing on login page
