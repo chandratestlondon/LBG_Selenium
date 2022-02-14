@@ -20,7 +20,7 @@ public class TestBaseClass {
 	{
 		try {
 			prop =new Properties();
-			String filepath ="F:\\OrangeHRM_Automation\\LBG_Selenium\\src\\main\\java\\com\\LBG\\config\\config.properties";
+			String filepath ="C:\\Users\\Mehul\\eclipse-workspace\\LBG_Selenium\\src\\main\\java\\com\\LBG\\config\\config.properties";
 			
 			
 		    FileInputStream fs =new FileInputStream(filepath);
@@ -37,7 +37,7 @@ public class TestBaseClass {
 	public static void Initilization()
 	{
 		String driverpath= prop.getProperty("driverpath");
-		System.setProperty("webdriver.gecko.driver", driverpath);
+		System.setProperty("webdriver.gecko.driver",driverpath);
 		driver =new FirefoxDriver();
 
 		driver.manage().window().maximize();
