@@ -20,7 +20,7 @@ public class TestBaseClass {
 	{
 		try {
 			prop =new Properties();
-			String filepath ="C:\\Users\\Mehul\\eclipse-workspace\\LBG_Selenium\\src\\main\\java\\com\\LBG\\config\\config.properties";
+			String filepath ="F:\\Minakshi_Cucumber_PracticeUK\\LBG_Selenium\\src\\main\\java\\com\\LBG\\config\\config.properties";
 			
 			
 		    FileInputStream fs =new FileInputStream(filepath);

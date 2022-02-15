@@ -27,6 +27,9 @@ public class stepDefinations extends TestBaseClass {
 	public void user_landing_on_login_page() {
 	     driver.get("https://opensource-demo.orangehrmlive.com/");
 	     System.out.println("New branch pull request");
+	     System.out.println("New branch pull request by Minakshi from another laptop");
+	     
+	     
 	   
 	}
 
@@ -38,6 +41,8 @@ public class stepDefinations extends TestBaseClass {
 	@And("Click on login button")
 	public void click_on_login_button() {
 		LP.clickLogin();
+		System.out.println("Login button is clicked");
+	     
 	}
 
 	@Then("home page is displayed")
