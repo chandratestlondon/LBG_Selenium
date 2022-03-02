@@ -28,3 +28,23 @@ Feature: Application login
   Examples:
   |Username|Password	|
   |admin   |admin123  |
+  
+  @SmokeTest
+ Scenario Outline: home page default login4
+  Given User landing on login page
+  When User enters <Username> and <Password>
+  And Click on login button
+  Then Dashboard is displayed
+  Examples:
+  |Username|Password	|
+  |admin   |admin123  |
+  
+  @SmokeTest
+ Scenario Outline: home page default login4
+  Given User landing on login page
+  When User enters <Username> and <Password>
+  And Click on login button
+  Then Dashboard is displayed
+  Examples:
+  |Username|Password	|
+  |admin   |admin123  |

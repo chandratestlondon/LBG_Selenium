@@ -27,9 +27,7 @@ public class stepDefinations extends TestBaseClass {
 	public void user_landing_on_login_page() {
 	     driver.get("https://opensource-demo.orangehrmlive.com/");
 	     System.out.println("New branch pull request");
-	     System.out.println("New branch pull request by Minakshi from another laptop");
-	     
-	     
+	     System.out.println("New branch pull request by Minakshi from another laptop");     
 	   
 	}
 
