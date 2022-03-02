@@ -41,7 +41,7 @@ public class stepDefinations extends TestBaseClass {
 	@And("Click on login button")
 	public void click_on_login_button() {
 		LP.clickLogin();
-		System.out.println("Login button1 is clicked.");
+		System.out.println("Login button1 is clicked..");
 	     
 	}
 
